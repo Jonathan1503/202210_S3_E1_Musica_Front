@@ -1,16 +1,22 @@
 import { Album } from "./album";
 
 export class AlbumDetail extends Album {
-  authors: Array<Author> = [];
-  reviews: Array<Review> = [];
+  //TODO relaciones
+  //artistas: Array<Artista> = [];
+  //canciones: Array<Cancion> = [];
+  //generos: Array<Genero> = [];
 
   constructor(
     id: number,
     name: string,
-    image: string,
+    image: string
+    //artistas: Array<Artista>,
+    //canciones: Array<Cancion>,
+    //generos: Array<Genero>
   ) {
     super(id, name, image);
-    this.authors = authors;
-    this.reviews = reviews;
+    //this.artistas = artistas;
+    //this.canciones = canciones;
+    //this.generos = generos;
   }
 }
