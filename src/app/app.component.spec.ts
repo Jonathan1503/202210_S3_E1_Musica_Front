@@ -1,15 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+import { AlbumListComponent } from './album/album-list/album-list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
+        HttpClientModule,
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        AlbumListComponent
       ],
     }).compileComponents();
   });
@@ -20,10 +24,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'museums-front'`, () => {
+  it(`should have as title 'musica-front'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('museums-front');
+    expect(app.title).toEqual('musica-front');
   });
 
   it('should render title', () => {

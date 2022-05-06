@@ -1,16 +1,16 @@
 export class Album {
   id: number;
-  name: string;
-  image: string;
+  titulo: string;
+  imagen: string;
 
   constructor(
     id: number,
-    name: string,
-    image: string,
+    titulo: string,
+    imagen: string,
 
   ) {
     this.id = id;
-    this.name = name;
-    this.image = image;
+    this.titulo = titulo;
+    this.imagen = imagen;
   }
 }

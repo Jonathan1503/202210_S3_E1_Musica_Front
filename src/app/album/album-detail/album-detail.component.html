@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <p class="h3 p-3">{{ albumDetail.name }}</p>
+  <p class="h3 p-3">{{ albumDetail.titulo }}</p>
   <div class="row">
     <div class="col-2">
       <div class="thumb">
         <img
           class="img-fluid"
-          src="{{ albumDetail.image }}"
-          alt="{{ albumDetail.name }}"
+          src="{{ albumDetail.imagen }}"
+          alt="{{ albumDetail.titulo }}"
         />
       </div>
     </div>
@@ -21,7 +21,7 @@
         <dd>{{ albumDetail.publishingDate }}</dd>
         <hr />
         <dt class="bold">Editorial</dt>
-        <dd class="caption">{{ albumDetail.editorial.name }}</dd>
+        <dd class="caption">{{ albumDetail.editorial.titulo }}</dd>
         <hr />
         <dt class="bold">Description</dt>
         <dd>{{ albumDetail.description }}</dd>

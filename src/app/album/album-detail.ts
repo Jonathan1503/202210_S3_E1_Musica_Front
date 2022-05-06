@@ -8,13 +8,13 @@ export class AlbumDetail extends Album {
 
   constructor(
     id: number,
-    name: string,
-    image: string
+    titulo: string,
+    imagen: string
     //artistas: Array<Artista>,
     //canciones: Array<Cancion>,
     //generos: Array<Genero>
   ) {
-    super(id, name, image);
+    super(id, titulo, imagen);
     //this.artistas = artistas;
     //this.canciones = canciones;
     //this.generos = generos;
