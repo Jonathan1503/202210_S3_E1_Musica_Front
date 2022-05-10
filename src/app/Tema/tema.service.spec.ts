@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
-
+import { TestBed, async, inject } from '@angular/core/testing';
 import { TemaService } from './tema.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-describe('TemaService', () => {
-  let service: TemaService;
-
+describe('Service: Tema', () => {
   beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(TemaService);
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
+      providers: [TemaService]
+    });
   });
 
-  it('should be created', () => {
+  it('should ...', inject([TemaService], (service: TemaService) => {
     expect(service).toBeTruthy();
-  });
+  }));
 });

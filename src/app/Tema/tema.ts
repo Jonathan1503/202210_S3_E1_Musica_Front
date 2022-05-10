@@ -1,13 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TemaListComponent } from './Tema-list/tema-list.component';
+export class Tema {
+  id: number;
+  nombre: string;
 
 
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
-})
-export class TemaModule { }
+  constructor(
+    id: number,
+    nombre: string,
+   
+  ) {
+    this.id = id;
+    this.nombre = nombre;
+   
+  }
+}
