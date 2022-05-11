@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { Genero } from './genero';
+import { GeneroDetail } from './genero-detail';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +13,8 @@ export class GeneroService {
 
   constructor(private http: HttpClient) { }
 
-  getGeneros(): Observable<Genero[]> {
-    return this.http.get<Genero[]>(this.apiUrl);
+  getGeneros(): Observable<GeneroDetail[]> {
+    return this.http.get<GeneroDetail[]>(this.apiUrl);
   }
 
 }

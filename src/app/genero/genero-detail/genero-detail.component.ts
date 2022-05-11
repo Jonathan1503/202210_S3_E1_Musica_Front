@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
+import { GeneroDetail } from '../genero-detail';
 
 @Component({
   selector: 'app-genero-detail',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./genero-detail.component.css']
 })
 export class GeneroDetailComponent implements OnInit {
+
+  @Input() generoDetail!: GeneroDetail;
 
   constructor() { }
 

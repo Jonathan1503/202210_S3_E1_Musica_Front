@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Genero } from '../genero';
+import { GeneroDetail } from '../genero-detail';
 import { GeneroService } from '../genero.service';
 
 @Component({
@@ -9,7 +9,10 @@ import { GeneroService } from '../genero.service';
 })
 export class GeneroListComponent implements OnInit {
 
-  generos: Array<Genero> = [];
+  selectedGenero!: GeneroDetail;
+  selected = false;
+
+  generos: Array<GeneroDetail> = [];
 
   constructor(private generoService: GeneroService) { }
 
@@ -17,6 +20,11 @@ export class GeneroListComponent implements OnInit {
     this.generoService.getGeneros().subscribe((generos) => {
       this.generos = generos;
     });
+  }
+
+  onSelected(genero: GeneroDetail): void {
+    this.selected = true;
+    this.selectedGenero = genero;
   }
 
   ngOnInit() {
