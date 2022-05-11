@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { Album } from './album';
+import { AlbumDetail } from './album-detail';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +13,8 @@ export class AlbumService {
 
   constructor(private http: HttpClient) { }
 
-  getAlbums() : Observable<Album[]> {
-    return this.http.get<Album[]>(this.apiUrl)
+  getAlbums() : Observable<AlbumDetail[]> {
+    return this.http.get<AlbumDetail[]>(this.apiUrl)
   }
 
 }

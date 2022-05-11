@@ -8,6 +8,6 @@ import { AlbumDetailComponent } from './album-detail/album-detail.component';
     CommonModule
   ],
   exports : [AlbumListComponent],
-  declarations: [AlbumListComponent]
+  declarations: [AlbumListComponent, AlbumDetailComponent]
 })
 export class AlbumModule { }
