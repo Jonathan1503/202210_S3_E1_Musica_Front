@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemaModule } from './Tema/tema.module';
-//import { AuthorModule } from './author/author.module';
+import { CreadorModule } from './Creador/creador.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,7 @@ import { TemaModule } from './Tema/tema.module';
     BrowserModule,
     AppRoutingModule,
     TemaModule,
+    CreadorModule,
     HttpClientModule
   ],
   providers: [],
