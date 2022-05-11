@@ -10,6 +10,7 @@ import { CancionService } from '../cancion.service';
 export class ListaCancionComponent implements OnInit {
 
   capitulos: Array<Cancion> = [];
+  canciones: Cancion[] | undefined;
   constructor(private cancionService: CancionService) { }
   selected: Boolean = false;
   selectedCancion!: Cancion;
