@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TemaModule } from './Tema/tema.module';
+import { CreadorModule } from './Creador/creador.module';
 import { CapituloModule } from './capitulo/capitulo.module';
 import { PodcastModule } from './podcast/podcast.module';
 
@@ -14,6 +16,8 @@ import { PodcastModule } from './podcast/podcast.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    TemaModule,
+    CreadorModule,
     PodcastModule,
     CapituloModule,
     HttpClientModule
