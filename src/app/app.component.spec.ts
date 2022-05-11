@@ -1,7 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AlbumListComponent } from './album/album-list/album-list.component';
 import { ListaCapituloComponent } from './capitulo/listaCapitulo/listaCapitulo.component';
@@ -17,7 +16,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         AlbumListComponent,
-        ListaPodcastComponent, 
+        ListaPodcastComponent,
         ListaCapituloComponent
       ],
     }).compileComponents();
