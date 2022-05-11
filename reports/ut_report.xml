@@ -1,7 +1,27 @@
 <testExecutions version="1">
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'museums-front'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+    <testCase name="AppComponent should have as title 'music-front'" duration="82"/>
+    <testCase name="AppComponent should create the app" duration="9"/>
+  </file>
+  <file path="src/app/podcast/podcast.service.spec.ts">
+    <testCase name="Service: Podcast should ..." duration="3"/>
+  </file>
+  <file path="src/app/podcast/podcast-detail/podcast-detail.component.spec.ts">
+    <testCase name="PodcastDetailComponent should create" duration="34"/>
+    <testCase name="PodcastDetailComponent should have an img element" duration="22"/>
+  </file>
+  <file path="src/app/capitulo/listaCapitulo/listaCapitulo.component.spec.ts">
+    <testCase name="ListaCapituloComponent should have an img element " duration="14"/>
+    <testCase name="ListaCapituloComponent should create" duration="13"/>
+  </file>
+  <file path="src/app/capitulo/capitulo.service.spec.ts">
+    <testCase name="Service: Capitulo should ..." duration="3"/>
+  </file>
+  <file path="src/app/capitulo/capitulo-detail/capitulo-detail.component.spec.ts">
+    <testCase name="CapituloDetailComponent should have an img element" duration="16"/>
+    <testCase name="CapituloDetailComponent should create" duration="8"/>
+  </file>
+  <file path="src/app/podcast/listaPodcast/listaPodcast.component.spec.ts">
+    <testCase name="ListaPodcastComponent should create" duration="16"/>
   </file>
 </testExecutions>

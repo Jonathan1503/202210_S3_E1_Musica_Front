@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemaModule } from './Tema/tema.module';
 import { CreadorModule } from './Creador/creador.module';
+import { CapituloModule } from './capitulo/capitulo.module';
+import { PodcastModule } from './podcast/podcast.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { CreadorModule } from './Creador/creador.module';
     AppRoutingModule,
     TemaModule,
     CreadorModule,
+    PodcastModule,
+    CapituloModule,
     HttpClientModule
   ],
   providers: [],
