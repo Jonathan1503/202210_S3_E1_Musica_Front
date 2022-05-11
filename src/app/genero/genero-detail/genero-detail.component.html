@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <p class="h3 p-3">{{ generoDetail.nombre }}</p>
+  <div class="row">
+    <div class="col-2">
+      <div class="thumb">
+    </div>
+    <div class="col">
+      <dl>
+        <dt>Albumes</dt>
+        <dd class="caption" *ngFor="let album of generoDetail.albumes">
+          {{ album.titulo }}
+         </dd>
+      </dl>
+    </div>
+  </div>
+ </div>

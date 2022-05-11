@@ -1,0 +1,17 @@
+<div *ngIf="selected">
+  <app-genero-detail [generoDetail]="selectedGenero"></app-genero-detail>
+ </div>
+
+ <hr />
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let genero of generos">
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+              <div class="card-body">
+                <h5 class="card-title" (click)="onSelected(genero)">{{ genero.nombre }}</h5>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
