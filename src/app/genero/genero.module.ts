@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GeneroComponent } from './genero.component';
+import { GeneroListComponent } from './genero-list/genero-list.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [GeneroComponent]
+  exports: [GeneroListComponent],
+  declarations: [GeneroListComponent]
 })
 export class GeneroModule { }
