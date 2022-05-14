@@ -4,6 +4,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { AlbumListComponent } from './album/album-list/album-list.component';
 import { ListaCapituloComponent } from './capitulo/listaCapitulo/listaCapitulo.component';
+import { CacionListComponent } from './cacion/cacion-list/cacion-list.component';
+
 import { ListaPodcastComponent } from './podcast/listaPodcast/listaPodcast.component';
 
 describe('AppComponent', () => {
@@ -17,7 +19,8 @@ describe('AppComponent', () => {
         AppComponent,
         AlbumListComponent,
         ListaPodcastComponent,
-        ListaCapituloComponent
+        ListaCapituloComponent,
+        CacionListComponent
       ],
     }).compileComponents();
   });

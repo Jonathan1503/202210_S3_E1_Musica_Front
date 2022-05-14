@@ -10,6 +10,8 @@ import { TemaModule } from './Tema/tema.module';
 import { CreadorModule } from './Creador/creador.module';
 import { CapituloModule } from './capitulo/capitulo.module';
 import { PodcastModule } from './podcast/podcast.module';
+import { CacionModule } from './cacion/cacion.module';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { PodcastModule } from './podcast/podcast.module';
     CreadorModule,
     PodcastModule,
     CapituloModule,
+    CacionModule,
     HttpClientModule
   ],
   providers: [],
