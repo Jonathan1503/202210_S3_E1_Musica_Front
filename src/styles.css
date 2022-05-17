@@ -1,2 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body{
+    height: 200vh;
+    font-size: 13.5px;
+  }
+
+
+  .app-sidebar{
+    position:absolute;
+     background: #3d1a1a;
+     width: 11rem ;
+     z-index: 300;
+
+     margin-top: 50px;
+     margin-bottom:50px ;
+  }
+
+
+  
+
+
+
+
+  

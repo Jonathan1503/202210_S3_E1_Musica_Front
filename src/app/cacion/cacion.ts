@@ -3,13 +3,13 @@ export class Cacion {
 
   titulo: string;
   duracion: number;
+
+  
   constructor(
     titulo: string,
-    duracion: number
+    duracion: number,
   ){
-
- 
-    this.titulo= titulo,
-    this.duracion= duracion  
+    this.titulo= titulo;
+    this.duracion= duracion;
   }
 }

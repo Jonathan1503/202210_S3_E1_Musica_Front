@@ -4,20 +4,17 @@
 
  <hr />
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col mb-2" *ngFor="let album of albums">
-          <div class="card p-2" style="width: 15rem; height: 20rem">
-              <img
-                class="card-img-top"
-                src="{{ album.imagen }}"
-                alt="{{ album.titulo }}"
-                (click)="onSelected(album)"
-              />
-              <div class="card-body">
-                <h5 class="card-title">{{ album.titulo }}</h5>
-              </div>
-           </div>
+ <div class="grid-container">
+
+  <div *ngFor="let c of albums">
+    <div class="container">
+      <img src="{{ c.imagen }}" alt="{{ c.titulo }}" class="image" >
+      <div class="overlay" (click)="onSelected(c)">
+        <div class="text">{{c.titulo}}</div>
       </div>
-   </div>
-</div>
+      <div></div>
+    </div>
+  </div>
+
+  
+   

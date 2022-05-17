@@ -1,5 +1,74 @@
-img {
-  height: 250px;
-  width: auto;
-  max-width: 250px;
- }
+.grid-container{
+ 
+
+  width:350px;
+  max-height:1300px;
+
+  background:rgb(255, 255, 255);
+  overflow-y:auto;
+  overflow-x: 100%;
+  transform:rotate(-90deg) translateY(-300px);
+  transform-origin:right top;
+}
+
+
+.grid-container > div{
+  padding:100px;
+  background:rgba(255, 253, 253, 0);
+  transform:rotate(90deg);
+  transform-origin: right top;
+}
+
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  
+}
+.image {
+  border-radius: 10%;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 300px;
+  opacity: 0;
+  border-radius: 10%;
+  transition: .5s ease;
+  background-color: #3d3c3aaf;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+

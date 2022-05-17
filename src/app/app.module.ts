@@ -11,11 +11,16 @@ import { CreadorModule } from './Creador/creador.module';
 import { CapituloModule } from './capitulo/capitulo.module';
 import { PodcastModule } from './podcast/podcast.module';
 import { CacionModule } from './cacion/cacion.module';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarModule } from 'ng-sidebar';
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +32,7 @@ import { CacionModule } from './cacion/cacion.module';
     PodcastModule,
     CapituloModule,
     CacionModule,
+    SidebarModule.forRoot(),
     HttpClientModule
   ],
   providers: [],
