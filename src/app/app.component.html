@@ -1,9 +1,127 @@
+<head>
+  
+  <!--Boxicons--> 
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-<div>
-  <h3>Albumes</h3>
-  <app-album-list></app-album-list>
+</head>
+
+  
+<div class="contenedor">
+  <img src="https://los40.com/los40/imagenes/2021/07/30/musica/1627646550_913079_1627647005_gigante_normal.jpg" class="img-fluid" alt="Responsive image">
+  <h1 class="texto-encima"> New Music </h1>
+  <h1 class="txt"> Billie Eilish </h1>
+  <button  class="bottonn" type="button" >Play</button>
+  <div class="centrado"></div>
 </div>
-<div>
+
+
+
+
+<div class="sidebar">
+  <div class="logo_content">
+    <div class="logo">
+      <i    (click)="toggleSidebar()"  class='bx bxs-user-circle'></i>
+      <div class="logo_name"> conding lab</div>
+    </div>
+    <i class='bx bx-menu' id="btn" ></i>
+  </div>
+  <ul class="navlist">
+    <li>
+        <i class='bx bx-search' ></i>
+        <input type="text" placeholder="Search">
+      <span class="tooltip"> Search</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-podcast' ></i>
+        <span class="links_name"> Podcast</span>
+      </a>
+      <span class="tooltip"> Podcast</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-playlist'></i>
+         <span class="links_name"> Playlist</span>
+      </a>
+      <span class="tooltip"> Playlist</span>
+    </li>
+    
+    <li>
+      <a href="#">
+        <i class='bx bxs-music' ></i>
+         <span class="links_name"> Music</span>
+      </a>
+      <span class="tooltip"> Music</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-radio' ></i>
+        <span class="links_name"> Radio</span>
+      </a>
+      <span class="tooltip"> Radio</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-cog'></i>
+        <span class="links_name"> Settings</span>
+      </a>
+      <span class="tooltip"> Settings</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-lock-alt' ></i>
+        <span class="links_name"> Privacy</span>
+      </a>
+      <span class="tooltip"> Privacy</span>
+    </li>
+  </ul>
+
+  <div class="profile_content">
+    <div class="profile">
+      <div class="profile_detail">
+        <img src="https://elcomercio.pe/resizer/YinMdQrGxPswT-sEZFo72Lo421s=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/LPW4JMM3MZG3DJA5RN5DGY44HU.jpeg" alt=""> 
+        <div class="name_job">
+         <div class="name"> Santiago vela</div>
+         <div class="job"> ingeniero</div>
+        </div>
+      </div>
+      <i class='bx bx-log-out' id ="log_out"></i>
+    </div>
+  </div>
+</div>
+
+<div class="home_content">
+  <div class="tex"> Home content</div>
+  </div>
+ 
+
+  <script>
+
+    let btn =document.querySelector("#btn");
+    let sidebar =document.querySelector(".sidebar");
+    let searchBtn =document.querySelector(".bx-search");
+  
+    btn.onclick=function(){
+      sidebar.classList.toggle("active");
+    }
+  
+    searchBtn.onclick=function(){
+      sidebar.classList.toggle("active");
+    }
+  
+  
+  
+  </script>
+  
+
+
+
+
+
+
+
+  
+<div class="genero">
   <h3>Generos</h3>
   <app-genero-list></app-genero-list>
 </div>
@@ -18,6 +136,11 @@
 </div>
 
 <div>
+  <h3>Albumes</h3>
+  <app-album-list></app-album-list>
+</div>
+
+<div>
   <h3>Podcasts</h3>
   <app-listaPodcast></app-listaPodcast>
 </div>
@@ -25,3 +148,13 @@
   <h3>Capitulos</h3>
   <app-listaCapitulo></app-listaCapitulo>
 </div>
+
+<app-cacion-list>
+
+
+
+
+
+
+
+

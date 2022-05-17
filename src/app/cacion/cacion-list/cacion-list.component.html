@@ -1,0 +1,17 @@
+<div *ngIf="selected">
+  <app-cacion-detail [cacionDetail]="selectedCacion"></app-cacion-detail>
+ </div>
+ <hr />
+
+
+ <div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let cacion of cacions" class="col mb-2">
+
+        <div class="card-body">
+          <h5 class="card-title">{{ cacion.titulo }}</h5>
+          <p class="card-text">[{{ cacion.duracion }}]</p>
+        </div>
+      </div>
+    </div>
+  </div>

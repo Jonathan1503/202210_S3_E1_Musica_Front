@@ -1,10 +1,14 @@
-<div class="container-fluid">
-  <div class="row">
-    <div>
-      Creador
-    </div>
-    <tr *ngFor="let Creador of creadores">
-      <td>{{Creador.nombre}}</td>
+<div class="grid-container">
 
+  <div *ngFor="let c of creadores">
+    <div class="container">
+      <img src="{{ c.imagen }}" alt="{{ c.nombre }}" class="image" >
+      <div class="overlay" >
+      </div>
+      <div>{{ c.nombre }}</div>
+    </div>
   </div>
 </div>
+
+
+
