@@ -1,0 +1,39 @@
+
+.name{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    font-family:'Monaco',sans-serif;
+}
+
+
+.card{
+    border-radius: 3.25rem;
+    background-color: rgba(0, 0, 255, 0.226);
+    background-image:url(https://significadocolores.com/wp-content/uploads/colores-solidos-e1610646141344.jpg);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20rem; 
+    height: 10rem;
+    border-radius: 3.25rem;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a19c9c9f;
+    text-align:center;
+  }
+
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+
+
