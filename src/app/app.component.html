@@ -2,8 +2,83 @@
   
   <!--Boxicons--> 
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
+  <link
+  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+  rel="stylesheet"
+/>
 </head>
+
+<nav class="navbar">
+  <ul class="navbar-nav">
+    <li class="logo">
+      <a href="#" class="nav-link">
+        <span class="link-text logo-text">Fireship</span>  
+        <i class='bx bx-podcast' ></i>
+       
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class='bx bxs-music'></i>
+        <span class="link-text">Canciones</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class='bx bxs-album' ></i>
+        <span class="link-text">Albumes</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class='bx bxs-microphone' ></i>
+        <span class="link-text">Artistas</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class='bx bx-podcast' ></i>
+        <span class="link-text">Podcasts</span>
+      </a>
+    </li>
+
+    <li class="nav-item" id="themeButton">
+      <a href="#" class="nav-link">
+        <i class='bx bx-user-circle' ></i>
+        <span class="link-text">Usuario</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 <div class="contenedor">
@@ -17,102 +92,7 @@
 
 
 
-<div class="sidebar">
-  <div class="logo_content">
-    <div class="logo">
-      <i    (click)="toggleSidebar()"  class='bx bxs-user-circle'></i>
-      <div class="logo_name"> conding lab</div>
-    </div>
-    <i class='bx bx-menu' id="btn" ></i>
-  </div>
-  <ul class="navlist">
-    <li>
-        <i class='bx bx-search' ></i>
-        <input type="text" placeholder="Search">
-      <span class="tooltip"> Search</span>
-    </li>
-    <li>
-      <a href="#">
-        <i class='bx bx-podcast' ></i>
-        <span class="links_name"> Podcast</span>
-      </a>
-      <span class="tooltip"> Podcast</span>
-    </li>
-    <li>
-      <a href="#">
-        <i class='bx bxs-playlist'></i>
-         <span class="links_name"> Playlist</span>
-      </a>
-      <span class="tooltip"> Playlist</span>
-    </li>
-    
-    <li>
-      <a href="#">
-        <i class='bx bxs-music' ></i>
-         <span class="links_name"> Music</span>
-      </a>
-      <span class="tooltip"> Music</span>
-    </li>
-    <li>
-      <a href="#">
-        <i class='bx bx-radio' ></i>
-        <span class="links_name"> Radio</span>
-      </a>
-      <span class="tooltip"> Radio</span>
-    </li>
-    <li>
-      <a href="#">
-        <i class='bx bxs-cog'></i>
-        <span class="links_name"> Settings</span>
-      </a>
-      <span class="tooltip"> Settings</span>
-    </li>
-    <li>
-      <a href="#">
-        <i class='bx bxs-lock-alt' ></i>
-        <span class="links_name"> Privacy</span>
-      </a>
-      <span class="tooltip"> Privacy</span>
-    </li>
-  </ul>
 
-  <div class="profile_content">
-    <div class="profile">
-      <div class="profile_detail">
-        <img src="https://elcomercio.pe/resizer/YinMdQrGxPswT-sEZFo72Lo421s=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/LPW4JMM3MZG3DJA5RN5DGY44HU.jpeg" alt=""> 
-        <div class="name_job">
-         <div class="name"> Santiago vela</div>
-         <div class="job"> ingeniero</div>
-        </div>
-      </div>
-      <i class='bx bx-log-out' id ="log_out"></i>
-    </div>
-  </div>
-</div>
-
-<div class="home_content">
-  <div class="tex"> Home content</div>
-  </div>
- 
-
-  <script>
-
-    let btn =document.querySelector("#btn");
-    let sidebar =document.querySelector(".sidebar");
-    let searchBtn =document.querySelector(".bx-search");
-  
-    btn.onclick=function(){
-      sidebar.classList.toggle("active");
-    }
-  
-    searchBtn.onclick=function(){
-      sidebar.classList.toggle("active");
-    }
-  
-  
-  
-  </script>
-  
 
 
 
@@ -140,21 +120,67 @@
   <app-album-list></app-album-list>
 </div>
 
+
+<h3>  Trending</h3>
+  
+
+  <div class="wrapper">
+    <div class="box">
+      <h3 class="testo">  Harry Styles</h3>
+
+      <img src="https://media.revistavanityfair.es/photos/627b753d7c42cdee6d351092/2:3/w_2000,h_3000,c_limit/Harry%20Styles.jpg" alt="" class="img1">
+      <img src="https://pbs.twimg.com/media/FPcLqegXIAIVxsr.jpg:large" alt="" class="img2">  
+    </div>
+
+    <div class="box">
+      <h3 class="testo">  Rosalia</h3>
+      <img src="  https://img.redbull.com/images/c_crop,x_1247,y_0,h_3104,w_2483/c_fill,w_400,h_540/q_auto:low,f_auto/redbullcom/2019/04/23/3e62f939-779b-4372-8037-27639c6e8283/rosalia-directo-madrid
+      " alt="" class="img1">
+      <img src="https://media.vogue.mx/photos/5d3c5b7d8b125d00080f9e59/master/w_1600%2Cc_limit/Rosalia%2520Vogue%2520Mexico%25205.jpg" alt="" class="img2">  
+    </div>
+
+    <div class="box">
+      <h3 class="testo">  Dua Lipa</h3>
+
+      <img src="https://media.vogue.es/photos/624a76be8d061e46a75928ee/2:3/w_2560%2Cc_limit/GettyImages-1389377878.jpg" alt="" class="img1">
+      <img src="https://pbs.twimg.com/media/FOt67SzXMAY6SGK?format=jpg&name=large" alt="" class="img2">  
+    </div>
+  </div>
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
 <div>
   <h3>Podcasts</h3>
   <app-listaPodcast></app-listaPodcast>
 </div>
+
+
+
 <div>
   <h3>Capitulos</h3>
   <app-listaCapitulo></app-listaCapitulo>
 </div>
 
-<app-cacion-list>
+
+<div>
+  <h3>Canciones</h3>
+  <app-cacion-list></app-cacion-list>
+</div>
 
 
 
 
-
+</main>
 
 
 
