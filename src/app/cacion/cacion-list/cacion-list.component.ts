@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import{Cacion}from '../cacion'
+import { CacionDetail } from '../cacion-detail';
+
 import { CacionService } from '../cacion.service';
 
 
@@ -11,9 +12,9 @@ import { CacionService } from '../cacion.service';
 export class CacionListComponent implements OnInit {
 
 
-  cacions: Array<Cacion> = [];
-  selectedCacion!: Cacion;
-  selected = false;
+  cacions: Array<CacionDetail> = [];
+  selectedCacion!: CacionDetail;
+  selected: Boolean = false;
 
 
   constructor(private cancionService: CacionService) { }
@@ -23,13 +24,15 @@ export class CacionListComponent implements OnInit {
       this.cacions = cacions;
     });
   }
-  onSelected(cacion: Cacion): void {
+  onSelected(cacion: CacionDetail): void {
     this.selected = true;
     this.selectedCacion = cacion;
   }
  
   ngOnInit() {
     this.getCanciones();
+    console.log(this.cacions);
+
   }
  
  }

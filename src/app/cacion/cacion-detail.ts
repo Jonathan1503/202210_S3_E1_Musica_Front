@@ -7,9 +7,11 @@ export class CacionDetail extends Cacion {
     constructor(
         titulo: string,
         duracion: number,
+        link:string,
+        portada:string
      ) 
     {
-        super(titulo,duracion);
+        super(titulo,duracion,link,portada);
         
     }
 

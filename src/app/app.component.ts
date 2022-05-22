@@ -11,12 +11,4 @@ export class AppComponent    {
 
   title = 'musica-front';
 
-
-  toggleSidebar() {
-    this.opened = !this.opened;
-  }
- 
-
-
-  
 }

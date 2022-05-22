@@ -11,8 +11,11 @@ import { CreadorModule } from './Creador/creador.module';
 import { CapituloModule } from './capitulo/capitulo.module';
 import { PodcastModule } from './podcast/podcast.module';
 import { CacionModule } from './cacion/cacion.module';
+import{PrincipalModule}from'./principal/principal.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarModule } from 'ng-sidebar';
+import { AlbumRoutingModule } from './album/album-routing.module';
+import { PodcastRoutingModule } from './podcast/podcast-routing.module';
 
 
 
@@ -25,15 +28,11 @@ import { SidebarModule } from 'ng-sidebar';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AlbumModule,
-    GeneroModule,
-    TemaModule,
-    CreadorModule,
-    PodcastModule,
-    CapituloModule,
-    CacionModule,
+    PrincipalModule,
+  
     SidebarModule.forRoot(),
     HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
