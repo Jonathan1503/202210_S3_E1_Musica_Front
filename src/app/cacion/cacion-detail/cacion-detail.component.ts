@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Cacion } from '../cacion';
-
+import { CacionDetail } from '../cacion-detail';
 
 @Component({
   selector: 'app-cacion-detail',
@@ -9,7 +8,7 @@ import { Cacion } from '../cacion';
 })
 export class CacionDetailComponent implements OnInit {
 
-  @Input() cacionDetail!: Cacion;
+  @Input() caciondetail!: CacionDetail;
 
 
   constructor() { }

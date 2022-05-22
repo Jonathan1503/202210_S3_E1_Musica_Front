@@ -1,9 +1,9 @@
+/* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { CacionDetailComponent } from './cacion-detail.component';
-
 import { faker } from '@faker-js/faker';
 import { CacionDetail } from '../cacion-detail';
 
@@ -24,12 +24,10 @@ describe('CacionDetailComponent', () => {
     fixture = TestBed.createComponent(CacionDetailComponent);
     component = fixture.componentInstance;
 
-    component.cacionDetail= new CacionDetail(
+    component.caciondetail= new CacionDetail(
       faker.lorem.sentence(),
       faker.datatype.number()
     );
-
-
 
     fixture.detectChanges();
     debug = fixture.debugElement;
@@ -38,5 +36,6 @@ describe('CacionDetailComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });
-//
