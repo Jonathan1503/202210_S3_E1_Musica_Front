@@ -4,18 +4,28 @@
 
  <hr />
 
+ <h1>Albumes Recomendados</h1>
+
+ <hr/>
+
  <div class="grid-container">
-
-  <div *ngFor="let c of albums">
-    <div class="container">
-      <img src="{{ c.imagen }}" alt="{{ c.titulo }}" class="image" >
-      <div class="overlay" (click)="onSelected(c)">
-        <div class="text">{{c.titulo}}</div>
+  <div *ngFor="let a of albums" class="grid-container-div">
+    <div class="card container" style="width: 18rem;">
+      <img class="card-img-top image" src="{{a.imagen}}" alt="Card image cap">
+      <div class="card-body lyr2">
+        <h5 class="card-title lyr2">{{ a.titulo | slice: 0:20 }}{{a.titulo.length > 20 ? '...' : ''}}</h5>
+        <p class="card-text lyr2">{{this.generateArtistsText(a)}}</p>
       </div>
-      <div></div>
+      <div class="overlay"></div>
     </div>
-  </div> 
+  </div>
+</div>
+<hr/>
+<h2>Por Generos</h2>
+<!-- TODO -->
 
 
 
- 
+
+
+
