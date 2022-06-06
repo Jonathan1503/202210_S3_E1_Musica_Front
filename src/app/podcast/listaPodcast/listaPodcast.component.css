@@ -1,16 +1,17 @@
 .grid-container{
- 
 
-  max-height: 500px;
+
+  max-height: 1000px;
   border: 1px solid rgb(255, 250, 250);
   display: flex;
-  overflow-x: auto;
+  max-width: 500px;
+
 }
 
 
 .grid-container > div{
   min-width: 300px;
-  height: 200px;
+  height: 1000px;
   line-height: 110px;
   text-align: center;
   background-color: rgb(255, 255, 255);
@@ -18,10 +19,7 @@
 }
 
 
-.grid-container ::-webkit-scrollbar{
 
-  width: 0;
-}
 
 
 
@@ -33,7 +31,7 @@
 .image {
   width: 200px;
   height: 200px;
-  
+
 }
 .image {
   border-radius: 10%;
@@ -69,6 +67,17 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+#myInput {
+  background-image: url(http://www.clker.com/cliparts/M/J/W/3/q/1/search-icon-small-16x16.svg.hi.png); /* Add a search icon to input */
+  background-position: 4px 7px; /* Position the search icon */
+  background-size: 3%;
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
 }
 
 

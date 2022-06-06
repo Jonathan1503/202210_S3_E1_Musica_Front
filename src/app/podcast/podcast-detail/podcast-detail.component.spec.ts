@@ -7,6 +7,10 @@ import { DebugElement } from '@angular/core';
 import { PodcastDetailComponent } from './podcast-detail.component';
 import { faker } from '@faker-js/faker';
 import { PodcastDetail } from '../podcast-detail';
+import {RouterTestingModule} from "@angular/router/testing"
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { PodcastService } from '../podcast.service';
 
 
 describe('PodcastDetailComponent', () => {
@@ -15,8 +19,9 @@ describe('PodcastDetailComponent', () => {
  let debug: DebugElement;
 
  beforeEach(async(() => {
-   TestBed.configureTestingModule({
-     declarations: [ PodcastDetailComponent ]
+   TestBed.configureTestingModule({ imports: [HttpClientModule,RouterTestingModule],
+    declarations: [ PodcastDetailComponent ],
+    providers:[PodcastService]
    })
    .compileComponents();
  }));

@@ -16,6 +16,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarModule } from 'ng-sidebar';
 import { AlbumRoutingModule } from './album/album-routing.module';
 import { PodcastRoutingModule } from './podcast/podcast-routing.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -29,7 +30,8 @@ import { PodcastRoutingModule } from './podcast/podcast-routing.module';
     BrowserModule,
     AppRoutingModule,
     PrincipalModule,
-  
+    RouterModule,
+
     SidebarModule.forRoot(),
     HttpClientModule
 

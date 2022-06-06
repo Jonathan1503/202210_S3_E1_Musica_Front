@@ -13,7 +13,13 @@ export class PodcastService {
 private apiUrl: string = environment.baseUrl + 'podcasts';
 
 constructor(private http: HttpClient) { }
+
 getPodcasts(): Observable<PodcastDetail[]> {
   return this.http.get<PodcastDetail[]>(this.apiUrl);
 }
+
+getPodcast(id:string): Observable<PodcastDetail> {
+  return this.http.get<PodcastDetail>(this.apiUrl + "/"+id);
+}
+
 }

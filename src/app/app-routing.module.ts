@@ -5,10 +5,10 @@ import { ListaPodcastComponent } from './podcast/listaPodcast/listaPodcast.compo
 import { PrincipalComponent } from './principal/principal.component';
 
 import { AppComponent } from './app.component';
+import { ListaCapituloComponent } from './capitulo/listaCapitulo/listaCapitulo.component';
 
 
-const routes: Routes = [
-  { path: '', component: PrincipalComponent }
+const routes: Routes = [{ path: '', component: PrincipalComponent }
 ];
 
 @NgModule({

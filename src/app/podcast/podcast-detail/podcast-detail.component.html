@@ -20,7 +20,9 @@
         <dd>{{ podcastDetail.precio }}</dd>
         <hr />
         <dt class="bold">Capitulos</dt>
-        <dd class="caption"  *ngFor="let capitulo of podcastDetail.capitulos">{{ capitulo.titulo }}</dd>
+        <dd class="caption"  *ngFor="let capitulo of podcastDetail.capitulos">
+          <a class="nav-link active" routerLink="/podcasts/{{ podcastDetail.id }}/capitulos/{{ capitulo.id }}">
+            {{ capitulo.titulo }}</a></dd>
         <hr />
         <dt class="bold">Description</dt>
         <dd>{{ podcastDetail.descripcion }}</dd>

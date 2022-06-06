@@ -8,6 +8,9 @@ import { faker } from '@faker-js/faker';
 import { CapituloDetail } from '../capitulo-detail';
 import { Capitulo } from '../capitulo';
 import { Podcast } from 'src/app/podcast/podcast';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
+import { CapituloService } from '../capitulo.service';
 
 
 describe('CapituloDetailComponent', () => {
@@ -17,7 +20,9 @@ describe('CapituloDetailComponent', () => {
 
  beforeEach(async(() => {
    TestBed.configureTestingModule({
-     declarations: [ CapituloDetailComponent ]
+    imports: [HttpClientModule,RouterTestingModule],
+    declarations: [ CapituloDetailComponent ],
+    providers:[CapituloService]
    })
    .compileComponents();
  }));

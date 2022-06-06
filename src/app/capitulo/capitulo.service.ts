@@ -10,12 +10,17 @@ import { Capitulo } from './capitulo';
 })
 export class CapituloService {
 
- private apiUrl: string = environment.baseUrl + 'podcasts/1/capitulos';
+ private apiUrl: string = environment.baseUrl;
 
  constructor(private http: HttpClient) { }
 
- getCapitulos(): Observable<Capitulo[]> {
-   return this.http.get<Capitulo[]>(this.apiUrl);
+ getCapitulos(pod:number): Observable<Capitulo[]> {
+   return this.http.get<Capitulo[]>(this.apiUrl+"podcasts/"+pod+"/capitulos");
  }
+
+ getCapitulo(idcap:string, idpod:string): Observable<Capitulo> {
+  return this.http.get<Capitulo>(this.apiUrl+"podcasts/"+idpod+"/capitulos/"+idcap);
+}
+
 
 }

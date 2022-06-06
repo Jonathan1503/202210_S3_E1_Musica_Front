@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CapituloDetailComponent } from '../capitulo/capitulo-detail/capitulo-detail.component';
 import { ListaPodcastComponent } from './listaPodcast/listaPodcast.component';
 import { PodcastDetailComponent } from './podcast-detail/podcast-detail.component';
 
@@ -17,6 +18,11 @@ const routes: Routes = [{
         path: ':id',
         component: PodcastDetailComponent
       },
+      {
+        path: ':id/capitulos/:capid',
+        component: CapituloDetailComponent
+      },
+
     ]
   }];
 
